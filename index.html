@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كتب الحساب الذهني PDF | الأكاديمية المصرية للحساب الذهني</title>
+<meta name="description" content="منهج الحساب الذهني الكامل للمدربين بصيغة PDF مع حق الاستخدام الدائم والطباعة للطلاب وغلاف باسمك ورقمك.">
+<style>
+:root{
+    --navy:#061631;
+    --blue:#123e7c;
+    --gold:#f3bd30;
+    --green:#1c9b59;
+    --ink:#172033;
+    --muted:#667085;
+    --paper:#f5f7fb;
+    --white:#fff;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+    font-family:Tahoma,Arial,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.85;
+    padding-bottom:132px;
+}
+a{color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+section{padding:58px 0}
+
+.topbar{
+    background:#041126;
+    color:#dbe7fb;
+    padding:9px 0;
+    font-size:14px;
+}
+.topbar-inner{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.topbar a{text-decoration:none;color:#fff;font-weight:bold}
+
+.hero{
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+    background:
+      radial-gradient(circle at 12% 12%,rgba(243,189,48,.22),transparent 24%),
+      radial-gradient(circle at 88% 80%,rgba(61,146,255,.22),transparent 28%),
+      linear-gradient(135deg,var(--navy),var(--blue));
+    padding:68px 0 58px;
+}
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.12fr .88fr;
+    gap:44px;
+    align-items:center;
+}
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    background:var(--gold);
+    color:#16213a;
+    padding:7px 17px;
+    border-radius:99px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+h1{font-size:clamp(32px,5.6vw,57px);line-height:1.3;margin-bottom:17px}
+.hero-copy{font-size:19px;color:#e4edfa;max-width:670px;margin-bottom:24px}
+.quick-points{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:23px}
+.quick-points span{
+    background:rgba(255,255,255,.11);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:10px;
+    padding:6px 11px;
+    font-size:14px;
+}
+.price-box{
+    display:inline-flex;
+    align-items:center;
+    gap:11px;
+    background:#fff;
+    color:#0d254e;
+    border-radius:15px;
+    padding:11px 20px;
+    margin-bottom:19px;
+    font-weight:bold;
+}
+.price-box strong{font-size:28px;color:#0d7d46}
+.price-box del{color:#7b8190}
+.buttons{display:flex;flex-wrap:wrap;gap:11px}
+.btn{
+    display:inline-block;
+    border-radius:13px;
+    padding:13px 22px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.2s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-whatsapp{background:#25d366;color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.25)}
+.btn-outline{border:2px solid rgba(255,255,255,.8);color:#fff;padding:11px 20px}
+
+.book-stage{position:relative;min-height:440px;display:grid;place-items:center}
+.book{
+    position:absolute;
+    width:205px;
+    height:292px;
+    border-radius:7px 16px 16px 7px;
+    box-shadow:0 25px 55px rgba(0,0,0,.36);
+    padding:25px 19px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-right:8px solid rgba(255,255,255,.18);
+}
+.book small{font-weight:bold;opacity:.9}
+.book h2{font-size:25px;line-height:1.35}
+.book .level{font-size:14px;background:rgba(255,255,255,.18);padding:5px 9px;border-radius:9px;width:max-content}
+.book-one{background:linear-gradient(145deg,#f3bd30,#e58318);color:#11203b;transform:rotate(8deg) translate(-64px,9px);z-index:3}
+.book-two{background:linear-gradient(145deg,#1d62aa,#092f68);color:#fff;transform:rotate(-9deg) translate(65px,15px);z-index:2}
+.book-three{background:linear-gradient(145deg,#1c9b59,#08713d);color:#fff;transform:rotate(1deg) translateY(-48px);z-index:4}
+.pdf-seal{
+    position:absolute;
+    bottom:22px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:6;
+    background:#fff;
+    color:#c83232;
+    border:4px solid #ffd6d6;
+    border-radius:99px;
+    font-weight:bold;
+    font-size:18px;
+    padding:9px 18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.22);
+    white-space:nowrap;
+}
+
+.section-title{text-align:center;margin-bottom:32px}
+.section-title h2{color:#0b2857;font-size:clamp(27px,4.8vw,40px);line-height:1.4;margin-bottom:7px}
+.section-title p{color:var(--muted);max-width:780px;margin:auto}
+
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+    background:#fff;
+    padding:25px 20px;
+    border-radius:18px;
+    box-shadow:0 8px 26px rgba(20,45,90,.08);
+    border:1px solid #edf1f7;
+}
+.card-icon{font-size:37px;margin-bottom:8px}
+.card h3{color:#102c5c;margin-bottom:5px}
+.card p{color:#5e687b;font-size:15px}
+.highlight-card{border:2px solid var(--gold);background:linear-gradient(180deg,#fffdf4,#fff)}
+
+.digital-notice{
+    background:#fff;
+    border:2px solid #71a7e6;
+    border-radius:22px;
+    padding:28px;
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:20px;
+    align-items:center;
+    box-shadow:0 10px 30px rgba(23,79,145,.09);
+}
+.digital-notice-icon{font-size:58px}
+.digital-notice h2{color:#0b4b91;font-size:clamp(24px,4vw,34px);margin-bottom:4px}
+.digital-notice p{color:#4e5e73}
+.digital-notice strong{color:#b82e25}
+
+.exclusive{
+    background:linear-gradient(135deg,#fff9df,#fff);
+    border:2px solid #f4c954;
+    border-radius:24px;
+    padding:31px;
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:20px;
+    align-items:center;
+    box-shadow:0 12px 35px rgba(125,91,0,.09);
+}
+.exclusive-icon{font-size:62px}
+.exclusive h2{color:#7c5200;margin-bottom:5px;font-size:clamp(24px,4vw,34px)}
+.exclusive p{color:#534725}
+
+.dark-section{background:linear-gradient(135deg,#071831,#123c72);color:#fff}
+.dark-section .section-title h2{color:#fff}
+.dark-section .section-title p{color:#d8e4f6}
+.package-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.package-list{display:grid;gap:11px}
+.package-item{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.13);
+    border-radius:13px;
+    padding:12px 15px;
+}
+.check{display:grid;place-items:center;min-width:27px;height:27px;border-radius:50%;background:var(--green);font-weight:bold}
+.cover-card{
+    background:#fff;
+    color:var(--ink);
+    border-radius:23px;
+    padding:28px;
+    text-align:center;
+    box-shadow:0 18px 45px rgba(0,0,0,.24);
+}
+.cover-preview{
+    min-height:260px;
+    border-radius:15px;
+    background:linear-gradient(145deg,#f5c842,#ef8627);
+    color:#142039;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:24px;
+    margin-bottom:14px;
+    border-right:9px solid rgba(89,43,0,.15);
+}
+.cover-preview h3{font-size:30px;line-height:1.35}
+.name-strip{background:#fff;border-radius:10px;padding:8px;font-weight:bold}
+.cover-card p{color:#667085}
+
+.samples-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sample-card{
+    background:#fff;
+    border-radius:17px;
+    overflow:hidden;
+    border:1px solid #e5eaf2;
+    box-shadow:0 8px 24px rgba(20,45,90,.08);
+    text-decoration:none;
+    transition:.2s ease;
+}
+.sample-card:hover{transform:translateY(-4px);box-shadow:0 13px 30px rgba(20,45,90,.14)}
+.sample-card img{display:block;width:100%;aspect-ratio:210 / 297;object-fit:cover;background:#fff}
+.sample-card span{display:block;padding:10px 12px;color:#18345f;font-weight:bold;text-align:center;font-size:14px;position:relative;z-index:2;background:#fff}
+.sample-card--zoom img{transform:scale(1.55);transform-origin:center 54%}
+.samples-actions{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin-top:24px}
+.pdf-btn{background:#d72626;color:#fff}
+
+.offers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.offer-card{
+    position:relative;
+    background:#fff;
+    border:1px solid #e3e9f2;
+    border-radius:22px;
+    padding:27px 21px;
+    box-shadow:0 9px 28px rgba(20,45,90,.08);
+    display:flex;
+    flex-direction:column;
+}
+.offer-card.best{border:3px solid var(--gold);transform:translateY(-7px);box-shadow:0 15px 38px rgba(130,91,0,.16)}
+.best-label{
+    position:absolute;
+    top:-16px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--gold);
+    color:#172033;
+    border-radius:99px;
+    padding:5px 15px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+.offer-number{font-size:13px;color:#697386;font-weight:bold}
+.offer-card h3{color:#0b2857;font-size:25px;margin:4px 0}
+.offer-price{color:#0d7d46;font-size:34px;font-weight:bold;margin-bottom:12px}
+.offer-list{list-style:none;display:grid;gap:8px;margin-bottom:19px;flex:1}
+.offer-list li{border-bottom:1px solid #edf0f5;padding-bottom:7px;color:#4f5d70}
+.offer-list .no{color:#9b3b3b}
+.offer-card .btn{text-align:center}
+
+.beginner-box{
+    background:linear-gradient(135deg,#edf5ff,#fff);
+    border:2px solid #9fc3ee;
+    border-radius:23px;
+    padding:31px;
+    display:grid;
+    grid-template-columns:70px 1fr auto;
+    gap:20px;
+    align-items:center;
+}
+.beginner-box .icon{font-size:58px}
+.beginner-box h2{color:#0b2857;font-size:clamp(24px,4vw,34px);margin-bottom:4px}
+.beginner-box p{color:#526176}
+.course-btn{background:#123e7c;color:#fff;white-space:nowrap}
+
+.profit-box{
+    background:linear-gradient(135deg,#0d6339,#139653);
+    color:#fff;
+    padding:34px;
+    border-radius:24px;
+    display:grid;
+    grid-template-columns:70px 1fr;
+    gap:20px;
+    align-items:center;
+    box-shadow:0 14px 36px rgba(0,100,60,.17);
+}
+.profit-box .icon{font-size:62px}
+.profit-box h2{font-size:clamp(25px,4vw,36px);margin-bottom:4px}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:steps}
+.step{background:#fff;border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(20,45,90,.08)}
+.step::before{
+    counter-increment:steps;
+    content:counter(steps);
+    display:grid;
+    place-items:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:var(--gold);
+    color:#13203c;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+.step h3{color:#102c5c;margin-bottom:5px}
+.step p{color:#667085}
+
+.faq{max-width:850px;margin:auto;display:grid;gap:12px}
+details{background:#fff;border-radius:15px;padding:17px 19px;box-shadow:0 6px 20px rgba(20,45,90,.06)}
+summary{cursor:pointer;font-weight:bold;color:#102c5c}
+details p{padding-top:9px;color:#5f6879}
+
+.final-cta{text-align:center;background:#fff}
+.final-box{max-width:850px;margin:auto;background:linear-gradient(135deg,#eff6ff,#fff8df);border-radius:25px;padding:38px 25px;border:1px solid #e5eaf2}
+.final-box h2{color:#0b2857;font-size:clamp(28px,5vw,40px);margin-bottom:6px}
+.final-box p{color:#606a7a;margin-bottom:18px}
+
+footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
+
+.sticky-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:50;
+    background:#fff;
+    border-top:1px solid #dde3ec;
+    box-shadow:0 -8px 25px rgba(12,35,70,.13);
+}
+.sticky-inner{width:min(1100px,94%);margin:auto;min-height:112px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.sticky-alert{font-weight:bold;color:#a33c14;font-size:14px}
+.sticky-price strong{color:#0d7d46;font-size:24px;margin-left:6px}
+.sticky-price del{color:#777}
+.sticky-note{font-size:13px;color:#667085}
+.sticky-btn{background:#25d366;color:#fff;text-decoration:none;font-weight:bold;padding:14px 22px;border-radius:13px;white-space:nowrap}
+
+@media(max-width:820px){
+    .hero-grid,.package-grid{grid-template-columns:1fr}
+    .hero{text-align:center;padding-top:45px}
+    .hero-copy{margin-inline:auto}
+    .quick-points,.buttons{justify-content:center}
+    .book-stage{min-height:390px}
+    .features,.steps{grid-template-columns:1fr 1fr}
+    .exclusive{grid-template-columns:1fr;text-align:center}
+    .profit-box{grid-template-columns:1fr;text-align:center}
+    .samples-grid{grid-template-columns:repeat(3,1fr)}
+    .offers-grid{grid-template-columns:1fr;gap:24px}
+    .offer-card.best{transform:none;order:-1}
+    .beginner-box{grid-template-columns:1fr;text-align:center}
+}
+
+@media(max-width:570px){
+    body{padding-bottom:145px}
+    section{padding:43px 0}
+    .topbar-inner{justify-content:center}.topbar-inner span{display:none}
+    .features,.steps{grid-template-columns:1fr}
+    .book{width:170px;height:245px;padding:19px 14px}
+    .book h2{font-size:20px}
+    .book-one{transform:rotate(8deg) translate(-48px,16px)}
+    .book-two{transform:rotate(-9deg) translate(48px,20px)}
+    .book-three{transform:rotate(1deg) translateY(-37px)}
+    .book-stage{min-height:340px}
+    .pdf-seal{font-size:15px;padding:7px 13px}
+    .exclusive,.profit-box{padding:25px 19px}
+    .digital-notice{grid-template-columns:1fr;text-align:center;padding:24px 18px}
+    .samples-grid{grid-template-columns:repeat(2,1fr);gap:11px}
+    .sample-card span{font-size:12px;padding:8px}
+    .beginner-box{padding:25px 18px}
+    .sticky-inner{min-height:130px;gap:9px}
+    .sticky-message{line-height:1.45}
+    .sticky-alert,.sticky-note{font-size:11px}
+    .sticky-price strong{display:block;font-size:21px}
+    .sticky-btn{padding:12px 13px;font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>الأكاديمية المصرية للحساب الذهني</span>
+    <a href="https://egypt-academy.github.io/Trainer-course/">🎓 تعرف على كورس إعداد المدرب</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">📚 منهج المدرب العملي</div>
+      <h1>كتب الحساب الذهني PDF جاهزة لتدريب طلابك</h1>
+      <p class="hero-copy">منهج تدريبي كامل تستخدمه مع الأطفال أثناء تدريبهم، يصلك مباشرة على واتساب وتحتفظ بحق استخدامه وطباعته لطلابك بشكل دائم.</p>
+      <div class="quick-points">
+        <span>✅ 10 مستويات أساسية</span>
+        <span>✅ غلاف باسمك ورقمك</span>
+        <span>✅ استخدام دائم</span>
+      </div>
+      <div class="price-box"><strong>300 جنيه فقط</strong><del>600 جنيه</del></div>
+      <div class="buttons">
+        <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20كتب%20الحساب%20الذهني">💬 اشترك في الكتب على واتساب</a>
+        <a class="btn btn-outline" href="#samples">شاهد عينات حقيقية</a>
+      </div>
+    </div>
+
+    <div class="book-stage" aria-label="تصميم توضيحي لكتب الحساب الذهني">
+      <div class="book book-one"><small>الأكاديمية المصرية</small><h2>الحساب الذهني</h2><span class="level">المستوى الأول</span></div>
+      <div class="book book-two"><small>منهج المدرب</small><h2>الحساب الذهني</h2><span class="level">المستوى الخامس</span></div>
+      <div class="book book-three"><small>برنامج متكامل</small><h2>الحساب الذهني</h2><span class="level">10 مستويات</span></div>
+      <div class="pdf-seal">PDF على واتساب ✓</div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>دي مش مجرد كتب… ده منهج شغلك مع الأطفال</h2>
+      <p>الكورس يعلمك الطريقة، والكتب هي المنهج الذي توزعه على طلابك وتتابع من خلاله التدريب والمستويات.</p>
+    </div>
+    <div class="features">
+      <article class="card highlight-card"><div class="card-icon">📲</div><h3>PDF يصلك على واتساب</h3><p>تحفظ الملفات على هاتفك أو جهازك، وترجع لها وتطبع منها وقتما تحتاج.</p></article>
+      <article class="card"><div class="card-icon">♾️</div><h3>حق استخدام دائم</h3><p>تدفع مرة واحدة وتستخدم المنهج مع طلابك الحاليين والجدد بدون اشتراك متكرر.</p></article>
+      <article class="card"><div class="card-icon">🖨️</div><h3>اطبع العدد الذي تحتاجه</h3><p>تطبع النسخ محليًا بتكلفة مناسبة حسب عدد الطلاب عندك بدل شراء كل نسخة بسعر مرتفع.</p></article>
+      <article class="card"><div class="card-icon">🏷️</div><h3>غلاف باسمك ورقمك</h3><p>يصلك غلاف احترافي مخصص ببياناتك لتقدّم المنهج لطلابك بصورة منظمة.</p></article>
+      <article class="card"><div class="card-icon">💼</div><h3>مناسب لبناء مجموعاتك</h3><p>منهج واضح يساعدك تنظّم المستويات والمتابعة بدل العمل بأوراق متفرقة.</p></article>
+      <article class="card highlight-card"><div class="card-icon">💰</div><h3>هامش ربح للمدرب</h3><p>تقدر تطبع الكتب وتوفّرها لطلابك بالسعر الذي يناسب خدمتك وتكلفة الطباعة.</p></article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="digital-notice">
+      <div class="digital-notice-icon">📲</div>
+      <div>
+        <h2>تنبيه مهم: الكتب PDF وليست مطبوعة</h2>
+        <p>الملفات تُرسل مباشرة على واتساب بدون انتظار شحن. تظل معك بشكل دائم، وتطبع منها لأي عدد من الطلاب وقتما تحتاج. <strong>تكلفة نسخة الطالب يدفعها الطالب</strong>، وتقدر تضيف هامش ربح مناسب لخدمتك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="exclusive">
+      <div class="exclusive-icon">🏆</div>
+      <div>
+        <h2>ميزة تقدمها الأكاديمية للمدرب</h2>
+        <p>الأكاديمية المصرية تمنحك حق استخدام ملفات الكتب بشكل دائم، وطباعتها وتصويرها لطلابك بدون إلزامك بشراء نسخ جديدة كل فترة. هدفنا أن يكون المنهج أداة تساعدك على العمل، وليس تكلفة مستمرة عليك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="samples" style="background:#eef3fa">
+  <div class="container">
+    <div class="section-title">
+      <h2>👀 شوف عينات حقيقية من داخل الكتب</h2>
+      <p>نماذج متناسقة من جداول الأرقام والتدريبات داخل المستويات المختلفة، علشان تشوف تدرّج المنهج وتنظيمه بنفسك قبل الاشتراك.</p>
+    </div>
+    <div class="samples-grid">
+      <a class="sample-card" href="samples/addition-table.jpg" target="_blank" rel="noopener"><img src="samples/addition-table.jpg" alt="جدول تدريبات الجمع" loading="lazy"><span>جداول تدريبات الجمع</span></a>
+      <a class="sample-card" href="samples/seven-rows-add-sub.jpg" target="_blank" rel="noopener"><img src="samples/seven-rows-add-sub.jpg" alt="صفحة جمع وطرح تحتوي على سبعة صفوف تمارين وصف للإجابة" loading="lazy"><span>تمارين بعدد صفوف أكبر</span></a>
+      <a class="sample-card" href="samples/friends-five.jpg" target="_blank" rel="noopener"><img src="samples/friends-five.jpg" alt="تدريبات أصدقاء الخمسة" loading="lazy"><span>أصدقاء الخمسة</span></a>
+      <a class="sample-card" href="samples/level-title.jpg" target="_blank" rel="noopener"><img src="samples/level-title.jpg" alt="صفحة عنوان أحد مستويات المنهج" loading="lazy"><span>عنوان مستوى</span></a>
+      <a class="sample-card sample-card--zoom" href="samples/brain-games.jpg" target="_blank" rel="noopener"><img src="samples/brain-games.jpg" alt="لعبة حساب ذهنية بالألوان" loading="lazy"><span>ألعاب ذهنية</span></a>
+      <a class="sample-card" href="samples/multiplication-two-digit.jpg" target="_blank" rel="noopener"><img src="samples/multiplication-two-digit.jpg" alt="جدول الضرب في رقمين" loading="lazy"><span>الضرب في رقمين</span></a>
+      <a class="sample-card" href="samples/simple-division.jpg" target="_blank" rel="noopener"><img src="samples/simple-division.jpg" alt="جدول تدريبات القسمة البسيطة" loading="lazy"><span>تدريبات القسمة البسيطة</span></a>
+      <a class="sample-card" href="samples/hundreds.jpg" target="_blank" rel="noopener"><img src="samples/hundreds.jpg" alt="تمارين جمع وطرح باستخدام أعداد من ثلاث خانات" loading="lazy"><span>المئات</span></a>
+    </div>
+    <div class="samples-actions">
+      <a class="btn pdf-btn" href="https://drive.google.com/file/d/1aR_sAcv6iKIdJcuBz6vbPMKPacuxrl70/view?usp=sharing" target="_blank" rel="noopener">📄 افتح ملف العينات والأسعار كاملًا</a>
+      <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=شاهدت%20عينات%20كتب%20الحساب%20الذهني%20وعايز%20أعرف%20التفاصيل">💬 اسأل عن الكتب على واتساب</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="package">
+  <div class="container">
+    <div class="section-title">
+      <h2>📦 ماذا يصلك في العرض الكامل؟</h2>
+      <p>الباقة الأقوى تجمع المستويات العشرة والكتب الإضافية والغلاف المخصص.</p>
+    </div>
+    <div class="package-grid">
+      <div class="package-list">
+        <div class="package-item"><span class="check">✓</span><strong>10 مستويات أساسية للحساب الذهني</strong></div>
+        <div class="package-item"><span class="check">✓</span><strong>كتاب المستوى التمهيدي</strong></div>
+        <div class="package-item"><span class="check">✓</span><strong>كتاب التخيل المتميز</strong></div>
+        <div class="package-item"><span class="check">✓</span><strong>كتاب الاختبارات</strong></div>
+        <div class="package-item"><span class="check">✓</span><strong>غلاف احترافي باسمك ورقمك</strong></div>
+        <div class="package-item"><span class="check">✓</span><strong>إرسال الملفات PDF على واتساب</strong></div>
+      </div>
+      <div class="cover-card">
+        <div class="cover-preview"><small>الأكاديمية المصرية للحساب الذهني</small><h3>منهج الحساب الذهني للأطفال</h3><div class="name-strip">اسم المدرب • رقم التواصل</div></div>
+        <p>نموذج توضيحي لفكرة الغلاف المخصص</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offers">
+  <div class="container">
+    <div class="section-title">
+      <h2>اختار العرض المناسب ليك</h2>
+      <p>الفرق بين العرض المتوسط والكامل 75 جنيه فقط، بينما العرض الكامل يمنحك ضعف المستويات وكل الكتب الإضافية.</p>
+    </div>
+    <div class="offers-grid">
+      <article class="offer-card best">
+        <div class="best-label">🔥 الأكثر طلبًا والأفضل قيمة</div>
+        <div class="offer-number">العرض رقم 1</div>
+        <h3>العرض الكامل</h3>
+        <div class="offer-price">300 جنيه</div>
+        <ul class="offer-list">
+          <li>✅ 10 مستويات PDF كاملة</li>
+          <li>🎁 المستوى التمهيدي مجانًا</li>
+          <li>🎁 كتاب التخيل المتميز مجانًا</li>
+          <li>🎁 كتاب الاختبارات مجانًا</li>
+          <li>🎁 غلاف باسمك ورقمك</li>
+        </ul>
+        <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20عرض%20الكتب%20رقم%201">اختار العرض الكامل</a>
+      </article>
+      <article class="offer-card">
+        <div class="offer-number">العرض رقم 2</div>
+        <h3>العرض المتوسط</h3>
+        <div class="offer-price">225 جنيه</div>
+        <ul class="offer-list">
+          <li>✅ 5 مستويات PDF</li>
+          <li>✅ غلاف باسمك ورقمك</li>
+          <li class="no">❌ بدون المستوى التمهيدي</li>
+          <li class="no">❌ بدون كتاب التخيل</li>
+          <li class="no">❌ بدون كتاب الاختبارات</li>
+        </ul>
+        <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20عرض%20الكتب%20رقم%202">اختار العرض المتوسط</a>
+      </article>
+      <article class="offer-card">
+        <div class="offer-number">العرض رقم 3</div>
+        <h3>العرض المحدود</h3>
+        <div class="offer-price">100 جنيه</div>
+        <ul class="offer-list">
+          <li>✅ 3 مستويات PDF</li>
+          <li class="no">❌ بدون غلاف مخصص</li>
+          <li class="no">❌ بدون المستوى التمهيدي</li>
+          <li class="no">❌ بدون كتاب التخيل</li>
+          <li class="no">❌ بدون كتاب الاختبارات</li>
+        </ul>
+        <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20عرض%20الكتب%20رقم%203">اختار العرض المحدود</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="profit-box">
+      <div class="icon">📈</div>
+      <div><h2>الكتب أصل يساعدك تكبّر شغلك</h2><p>لأن الملفات تظل معك، تقدر تستخدمها مع كل مجموعة جديدة وتطبع حسب احتياجك. ويمكنك إدخال تكلفة الكتاب ضمن نظام تدريبك، وبالتالي يكون لك هامش ربح بدل أن يذهب بالكامل لمورّد خارجي.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="beginner-box">
+      <div class="icon">🎓</div>
+      <div>
+        <h2>لسه مش مدرب حساب ذهني؟</h2>
+        <p>الكتب هي المنهج اللي بيستخدمه المدرب مع الأطفال أثناء التدريب، ومش كتابًا لتعليم المدرب طريقة الحساب الذهني من الصفر. لو لسه هتبدأ، الأفضل تتعلم الطريقة والشرح الأول من خلال كورس إعداد المدرب، وبعدها تستخدم الكتب مع طلابك.</p>
+      </div>
+      <a class="btn course-btn" href="https://egypt-academy.github.io/Trainer-course/">تعرف على كورس إعداد المدرب</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#eef3fa">
+  <div class="container">
+    <div class="section-title"><h2>كيف تستلم الكتب؟</h2><p>ثلاث خطوات بسيطة، وبعدها يصبح المنهج جاهزًا معك.</p></div>
+    <div class="steps">
+      <article class="step"><h3>أكد الاشتراك</h3><p>تواصل معنا على واتساب واكتب: الاشتراك في كتب الحساب الذهني.</p></article>
+      <article class="step"><h3>أرسل بيانات الغلاف</h3><p>أرسل الاسم ورقم التواصل المطلوبين على الغلاف المخصص.</p></article>
+      <article class="step"><h3>استلم ملفات PDF</h3><p>نرسل لك المنهج على واتساب لتحتفظ به وتبدأ التجهيز والطباعة.</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title"><h2>❓ الأسئلة الشائعة</h2></div>
+    <div class="faq">
+      <details><summary>هل الكتب مطبوعة أم PDF؟</summary><p>الكتب ديجيتال بصيغة PDF وتُرسل إليك على واتساب. تستلمها فورًا بدون شحن، وتظل معك بشكل دائم، وتطبع منها في أي وقت وبأي عدد من الطلاب.</p></details>
+      <details><summary>هل أدفع مقابل الكتب كل مرة أبدأ فيها مجموعة جديدة؟</summary><p>لا، الاشتراك مرة واحدة فقط، وبعدها تظل الملفات معك للاستخدام الدائم مع طلابك.</p></details>
+      <details><summary>هل الكتب بديل عن كورس إعداد المدرب؟</summary><p>لا. الكورس يعلّمك طريقة الحساب الذهني وكيف تشرح وتدرّب الأطفال، أما الكتب فهي المنهج الذي يستخدمه المدرب مع الأطفال أثناء التدريب والواجبات والاختبارات.</p></details>
+      <details><summary>هل أستطيع طباعة الكتب لطلابي؟</summary><p>نعم، يمكنك طباعة أو تصوير النسخ التي تحتاجها لطلابك بعد استلام الملفات.</p></details>
+      <details><summary>ما أسعار العروض الحالية؟</summary><p>العرض الكامل 300 جنيه، العرض المتوسط 225 جنيه، والعرض المحدود 100 جنيه. تفاصيل كل عرض موضحة في قسم الأسعار.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-box">
+      <h2>جهّز منهجك قبل ما تبدأ تدريب الأطفال</h2>
+      <p>استلم الكتب PDF على واتساب، واحتفظ بحق استخدامها وطباعتها مع طلابك بشكل دائم.</p>
+      <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20كتب%20الحساب%20الذهني">💬 أريد الاشتراك في الكتب</a>
+    </div>
+  </div>
+</section>
+
+<footer>الأكاديمية المصرية للحساب الذهني<br>جميع الحقوق محفوظة</footer>
+
+<div class="sticky-bar">
+  <div class="sticky-inner">
+    <div class="sticky-message">
+      <div class="sticky-alert">🔥 العرض الحالي على المنهج الكامل</div>
+      <div class="sticky-price"><strong>300 جنيه فقط</strong><del>600 جنيه</del></div>
+      <div class="sticky-note">PDF على واتساب + غلاف باسمك ورقمك</div>
+    </div>
+    <a class="sticky-btn" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20كتب%20الحساب%20الذهني">💬 اشترك الآن</a>
+  </div>
+</div>
+
+</body>
+</html>
