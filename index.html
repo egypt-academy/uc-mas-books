@@ -69,13 +69,17 @@ section{padding:58px 0}
 h1{font-size:clamp(32px,5.6vw,57px);line-height:1.3;margin-bottom:17px}
 .hero-copy{font-size:19px;color:#e4edfa;max-width:670px;margin-bottom:24px}
 .quick-points{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:23px}
-.quick-points span{
+.quick-points span,.quick-points a{
     background:rgba(255,255,255,.11);
     border:1px solid rgba(255,255,255,.2);
     border-radius:10px;
     padding:6px 11px;
     font-size:14px;
+    color:#fff;
+    text-decoration:none;
 }
+.quick-points a{background:rgba(255,200,61,.17);border-color:rgba(255,218,116,.65);font-weight:700}
+.quick-points a:hover{background:rgba(255,200,61,.28);transform:translateY(-1px)}
 .price-box{
     display:inline-flex;
     align-items:center;
@@ -409,6 +413,7 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
         <span>✅ 10 مستويات أساسية</span>
         <span>✅ غلاف باسمك ورقمك</span>
         <span>✅ استخدام دائم</span>
+        <a href="#not-trainer">🎓 لسه مش مدرب؟ ابدأ بالكورس أولًا</a>
       </div>
       <div class="price-box"><strong>300 جنيه فقط</strong><del>600 جنيه</del></div>
       <div class="buttons">
@@ -573,7 +578,7 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
   </div>
 </section>
 
-<section style="padding-top:0">
+<section id="not-trainer" style="padding-top:0;scroll-margin-top:24px">
   <div class="container">
     <div class="beginner-box">
       <div class="icon">🎓</div>
