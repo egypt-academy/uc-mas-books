@@ -52,9 +52,14 @@ section{padding:58px 0}
 .hero-grid{
     display:grid;
     grid-template-columns:1.12fr .88fr;
-    gap:44px;
+    grid-template-rows:auto auto;
+    column-gap:44px;
+    row-gap:18px;
     align-items:center;
 }
+.hero-info{grid-column:1;grid-row:1}
+.hero-actions{grid-column:1;grid-row:2}
+.hero-grid .book-stage{grid-column:2;grid-row:1 / span 2}
 .badge{
     display:inline-flex;
     align-items:center;
@@ -395,6 +400,10 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
 
 @media(max-width:820px){
     .hero-grid,.package-grid{grid-template-columns:1fr}
+    .hero-grid{grid-template-rows:auto auto auto;row-gap:10px}
+    .hero-info{grid-column:1;grid-row:1}
+    .hero-grid .book-stage{grid-column:1;grid-row:2}
+    .hero-actions{grid-column:1;grid-row:3}
     .hero{text-align:center;padding-top:45px}
     .hero-copy{margin-inline:auto}
     .quick-points{justify-content:center}
@@ -449,7 +458,7 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
 
 <header class="hero">
   <div class="container hero-grid">
-    <div>
+    <div class="hero-info">
       <div class="badge">📚 منهج المدرب العملي</div>
       <h1>كتب الحساب الذهني PDF جاهزة لتدريب طلابك</h1>
       <p class="hero-copy">منهج تدريبي كامل تستخدمه مع الأطفال أثناء تدريبهم، يصلك مباشرة على واتساب وتحتفظ بحق استخدامه وطباعته لطلابك بشكل دائم.</p>
@@ -459,6 +468,16 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
         <span>✅ استخدام دائم</span>
       </div>
       <div class="price-box"><strong>300 جنيه فقط</strong><del>600 جنيه</del></div>
+    </div>
+
+    <div class="book-stage" aria-label="تصميم توضيحي لكتب الحساب الذهني">
+      <div class="book book-one"><small>الأكاديمية المصرية</small><h2>الحساب الذهني</h2><span class="level">Level 1</span></div>
+      <div class="book book-two"><small>منهج المدرب</small><h2>الحساب الذهني</h2><span class="level">Level 5</span></div>
+      <div class="book book-three"><small>برنامج متكامل</small><h2>الحساب الذهني</h2><span class="level">12 مستوى</span></div>
+      <div class="pdf-seal">PDF على واتساب ✓</div>
+    </div>
+
+    <div class="hero-actions">
       <div class="buttons">
         <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20كتب%20الحساب%20الذهني">💬 اشترك في الكتب على واتساب</a>
         <a class="btn btn-outline" href="#samples">شاهد عينات حقيقية</a>
@@ -467,13 +486,6 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
         <span>📘 الكتب للمدربين فقط</span>
         <a class="btn btn-course" href="#not-trainer">🎓 لو مش مدرب اضغط للتعرّف على الكورس</a>
       </div>
-    </div>
-
-    <div class="book-stage" aria-label="تصميم توضيحي لكتب الحساب الذهني">
-      <div class="book book-one"><small>الأكاديمية المصرية</small><h2>الحساب الذهني</h2><span class="level">المستوى الأول</span></div>
-      <div class="book book-two"><small>منهج المدرب</small><h2>الحساب الذهني</h2><span class="level">المستوى الخامس</span></div>
-      <div class="book book-three"><small>برنامج متكامل</small><h2>الحساب الذهني</h2><span class="level">10 مستويات</span></div>
-      <div class="pdf-seal">PDF على واتساب ✓</div>
     </div>
   </div>
 </header>
@@ -485,12 +497,12 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
       <p>الكورس يعلمك الطريقة، والكتب هي المنهج الذي توزعه على طلابك وتتابع من خلاله التدريب والمستويات.</p>
     </div>
     <div class="features">
+      <article class="card highlight-card"><div class="card-icon">💰</div><h3>هامش ربح للمدرب</h3><p>تقدر تطبع الكتب وتوفّرها لطلابك بالسعر الذي يناسب خدمتك وتكلفة الطباعة.</p></article>
       <article class="card highlight-card"><div class="card-icon">📲</div><h3>PDF يصلك على واتساب</h3><p>تحفظ الملفات على هاتفك أو جهازك، وترجع لها وتطبع منها وقتما تحتاج.</p></article>
       <article class="card"><div class="card-icon">♾️</div><h3>حق استخدام دائم</h3><p>تدفع مرة واحدة وتستخدم المنهج مع طلابك الحاليين والجدد بدون اشتراك متكرر.</p></article>
       <article class="card"><div class="card-icon">🖨️</div><h3>اطبع العدد الذي تحتاجه</h3><p>تطبع النسخ محليًا بتكلفة مناسبة حسب عدد الطلاب عندك بدل شراء كل نسخة بسعر مرتفع.</p></article>
       <article class="card"><div class="card-icon">🏷️</div><h3>غلاف باسمك ورقمك</h3><p>يصلك غلاف احترافي مخصص ببياناتك لتقدّم المنهج لطلابك بصورة منظمة.</p></article>
       <article class="card"><div class="card-icon">💼</div><h3>مناسب لبناء مجموعاتك</h3><p>منهج واضح يساعدك تنظّم المستويات والمتابعة بدل العمل بأوراق متفرقة.</p></article>
-      <article class="card highlight-card"><div class="card-icon">💰</div><h3>هامش ربح للمدرب</h3><p>تقدر تطبع الكتب وتوفّرها لطلابك بالسعر الذي يناسب خدمتك وتكلفة الطباعة.</p></article>
     </div>
   </div>
 </section>
