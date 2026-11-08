@@ -92,27 +92,56 @@ h1{font-size:clamp(32px,5.6vw,57px);line-height:1.3;margin-bottom:17px}
 .price-box del{color:#7b8190}
 .buttons{display:flex;flex-wrap:wrap;gap:11px}
 .btn{
-    display:inline-block;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     border-radius:13px;
     padding:13px 22px;
     text-decoration:none;
     font-weight:bold;
+    text-align:center;
     transition:.2s ease;
 }
 .btn:hover{transform:translateY(-2px)}
-.btn-whatsapp{background:#25d366;color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.25)}
-.btn-outline{border:2px solid rgba(255,255,255,.8);color:#fff;padding:11px 20px}
+.btn-whatsapp{
+    flex:1 1 100%;
+    background:#25d366;
+    color:#fff;
+    padding:16px 24px;
+    font-size:18px;
+    box-shadow:0 8px 22px rgba(37,211,102,.25);
+}
+.btn-outline{
+    border:2px solid rgba(255,255,255,.8);
+    color:#fff;
+    padding:10px 16px;
+    font-size:14px;
+    min-width:220px;
+    margin-inline:auto;
+}
+.course-entry{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:12px;
+    padding:10px 12px;
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:14px;
+    background:rgba(255,255,255,.08);
+}
+.course-entry span{font-size:13px;font-weight:800;color:#fff}
 .btn-course{
-    flex:1 1 320px;
     background:linear-gradient(135deg,#ffd95f,#ffc02f);
     color:#10274c;
     border:2px solid #ffe8a3;
-    min-width:290px;
-    padding:16px 24px;
-    font-size:18px;
-    font-weight:900;
+    min-width:220px;
+    padding:10px 16px;
+    font-size:14px;
+    font-weight:800;
     text-align:center;
-    box-shadow:0 10px 24px rgba(255,192,47,.28);
+    box-shadow:0 7px 18px rgba(255,192,47,.22);
 }
 .btn-course:hover{background:linear-gradient(135deg,#ffe27d,#ffc83d);transform:translateY(-2px)}
 
@@ -368,8 +397,12 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
     .hero-grid,.package-grid{grid-template-columns:1fr}
     .hero{text-align:center;padding-top:45px}
     .hero-copy{margin-inline:auto}
-    .quick-points,.buttons{justify-content:center}
-    .btn-course{width:100%;max-width:520px;min-width:0}
+    .quick-points{justify-content:center}
+    .buttons{gap:8px}
+    .btn-outline{padding:9px 14px;font-size:14px;line-height:1.45}
+    .course-entry{justify-content:center;padding:10px}
+    .course-entry span{width:100%;text-align:center}
+    .btn-course{min-width:0;padding:9px 14px;font-size:14px;line-height:1.45}
     .book-stage{min-height:390px}
     .features,.steps{grid-template-columns:1fr 1fr}
     .exclusive{grid-template-columns:1fr;text-align:center}
@@ -421,7 +454,7 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
       <h1>كتب الحساب الذهني PDF جاهزة لتدريب طلابك</h1>
       <p class="hero-copy">منهج تدريبي كامل تستخدمه مع الأطفال أثناء تدريبهم، يصلك مباشرة على واتساب وتحتفظ بحق استخدامه وطباعته لطلابك بشكل دائم.</p>
       <div class="quick-points">
-        <span>✅ 10 مستويات أساسية</span>
+        <span>✅ 12 مستوى</span>
         <span>✅ غلاف باسمك ورقمك</span>
         <span>✅ استخدام دائم</span>
       </div>
@@ -429,7 +462,10 @@ footer{background:#061631;color:#cbd7ea;text-align:center;padding:26px 15px}
       <div class="buttons">
         <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/201283690139?text=الاشتراك%20في%20كتب%20الحساب%20الذهني">💬 اشترك في الكتب على واتساب</a>
         <a class="btn btn-outline" href="#samples">شاهد عينات حقيقية</a>
-        <a class="btn btn-course" href="#not-trainer">🎓 لسه مش مدرب؟ ابدأ بكورس إعداد المدرب</a>
+      </div>
+      <div class="course-entry">
+        <span>📘 الكتب للمدربين فقط</span>
+        <a class="btn btn-course" href="#not-trainer">🎓 لو مش مدرب اضغط للتعرّف على الكورس</a>
       </div>
     </div>
 
